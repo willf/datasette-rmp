@@ -1,0 +1,17 @@
+{
+  "title": "Risk Management Plans from EPA",
+  "description": "These data are from the U.S. Environmental Protection Agency (EPA) and contain information about Risk Management Plans (RMPs) submitted by facilities that use certain hazardous substances.",
+  "license": "ODbL",
+  "license_url": "https://opendatacommons.org/licenses/odbl/",
+  "source": "EPA Risk Management Plan Search Tool",
+  "source_url": "https://cdxapps.epa.gov/olem-rmp-pds/",
+  "plugins": {
+    "datasette-render-markdown": {
+      "columns": ["link", "Report"]
+    },
+    "datasette-homepage-table": {
+      "database": "rmp",
+      "table": "facilities_with_chemicals_and_naics"
+    }
+  }
+}

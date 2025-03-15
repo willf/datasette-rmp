@@ -1,0 +1,11 @@
+CREATE INDEX idx_facilities_epa_facility_id ON facilities("EPA Facility ID");
+CREATE INDEX idx_facility_chemical_epa_facility_id ON facility_chemical("EPA Facility ID");
+CREATE INDEX idx_facility_naics_epa_facility_id ON facility_naics("EPA Facility ID");
+CREATE INDEX idx_facility_naics_naics_code ON facility_naics("NAICS Code");
+CREATE INDEX idx_naics_names_code ON naics_names(code);
+CREATE INDEX idx_facilities_with_chemicals_and_naics_epa_facility_id ON facilities_with_chemicals_and_naics("EPA Facility ID");
+CREATE INDEX idx_facilities_with_chemicals_and_naics_facility_name ON facilities_with_chemicals_and_naics("Facility Name");
+CREATE INDEX idx_facilities_with_chemicals_and_naics_city ON facilities_with_chemicals_and_naics(City);
+CREATE INDEX idx_facilities_with_chemicals_and_naics_state ON facilities_with_chemicals_and_naics(State);
+CREATE INDEX idx_facilities_with_chemicals_and_naics_county ON facilities_with_chemicals_and_naics(County);
+CREATE INDEX idx_facilities_with_chemicals_and_naics_zip ON facilities_with_chemicals_and_naics(Zip);
