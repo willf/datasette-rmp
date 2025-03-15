@@ -10,8 +10,8 @@
       "columns": ["link", "Report"]
     },
     "datasette-homepage-table": {
-      "database": "rmp",
-      "table": "facilities_with_chemicals_and_naics"
+      "database": "risk-management-plans",
+      "table": "facilities"
     }
   }
 }
